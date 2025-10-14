@@ -1,0 +1,51 @@
+[project]
+name = "elliot"
+version = "1.0.0"
+description = "A Comprehensive and Rigorous Framework for Reproducible Recommender Systems Evaluation"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+maintainers = [{ name = "sisinflab" }]
+keywords = [
+    "recommender",
+    "recommendation",
+    "system",
+    "evaluation",
+    "framework",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "hyperopt==0.2.5",
+    "numpy==1.18.0",
+    "tensorflow==2.3.2",
+    "tqdm==4.58.0",
+    "scipy==1.4.1",
+    "pandas==1.1.5",
+    "Pillow>=8.1.1",
+    "PyYAML==5.4.1",
+    "scikit_learn==0.24.1",
+    "protobuf<=3.20",       # Fix for tensorflow compatibility
+]
+
+urls = { "Repository" = "https://github.com/sisinflab/elliot" }
+
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Operating System :: OS Independent',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: Apache License',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: Implementation',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Topic :: Software Development :: Libraries',
+]
+
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = { find = {} }
